@@ -116,3 +116,39 @@ Baseline performance:
 - Logistic Regression provides a solid baseline but struggles slightly with recall for churn class
 
 ---
+
+
+##  Day 3 Progress — Advanced Modeling with LightGBM
+
+
+###  Class Imbalance Handling
+The dataset contains a lower proportion of churn customers compared to non-churn customers, creating class imbalance.
+
+To improve churn detection:
+- Calculated imbalance ratio
+- Applied class weighting 
+- Prioritized improving recall for churn class
+
+---
+
+###  LightGBM Model Training
+- Trained a LightGBM classifier on the preprocessed dataset
+- Compared performance with baseline Logistic Regression
+- Evaluated using Accuracy, Recall, F1-score, and ROC-AUC
+
+---
+
+###  Key Observations
+- LightGBM improved detection of churn customers compared to the baseline model.
+- The model demonstrated better sensitivity toward minority class predictions.
+- Trade-offs between overall accuracy and churn recall were analyzed.
+
+
+---
+
+###  Project Evolution
+With LightGBM integration, the project now includes:
+- Baseline model comparison
+- Class imbalance handling
+- Boosting-based learning approach
+- Business-aligned evaluation strategy
