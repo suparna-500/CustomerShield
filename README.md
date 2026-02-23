@@ -152,3 +152,56 @@ With LightGBM integration, the project now includes:
 - Class imbalance handling
 - Boosting-based learning approach
 - Business-aligned evaluation strategy
+
+##  Day 4 Progress— Model Optimization & Threshold Strategy
+
+###  Objective
+Refine the LightGBM model through hyperparameter tuning and align predictions with business priorities using decision threshold optimization.
+
+---
+
+###  Hyperparameter Tuning
+
+LightGBM hyperparameters were optimized using GridSearchCV with ROC-AUC as the evaluation metric.  
+
+After tuning:
+- The model maintained strong ranking performance.
+- ROC-AUC remained comparable to the baseline Logistic Regression model.
+- The tuned model provided more flexibility in handling churn detection trade-offs.
+
+---
+
+###  Threshold Optimization
+
+Instead of relying on the default 0.5 decision threshold, I analyzed the precision–recall tradeoff across different threshold values.
+
+This allowed me to:
+
+- Increase recall for churn customers
+- Adjust the balance between precision and recall
+- Align model predictions with business goals
+
+By lowering the threshold, the model was able to identify a significantly higher proportion of churn customers.
+
+---
+
+###  Key Insight
+
+Both Logistic Regression and LightGBM achieved very similar ROC-AUC scores, indicating comparable ranking ability.
+
+However, LightGBM allowed stronger control over churn recall through threshold adjustment.  
+This makes it more suitable when the primary goal is minimizing revenue loss by identifying high-risk customers.
+
+---
+
+###  Business Perspective
+
+In churn prediction:
+
+- Missing a churn customer can result in lost revenue.
+- Identifying more at-risk customers enables targeted retention strategies.
+
+Model selection is therefore guided not only by accuracy, but by business impact and recall performance.
+
+---
+
