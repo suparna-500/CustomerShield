@@ -75,7 +75,7 @@ data/WA_Fn-UseC_-Telco-Customer-Churn.csv
 - Streamlit (planned deployment)  
 
 
-#  Day 2 Progress — Data Preprocessing & Baseline Model
+## Day 2 Progress — Data Preprocessing & Baseline Model
 
 ##  Data Cleaning
 - Cleaned column names
