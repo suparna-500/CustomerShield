@@ -194,6 +194,75 @@ This makes it more suitable when the primary goal is minimizing revenue loss by 
 
 ---
 
+## 🚀 Day 5 — Model Explainability with SHAP
+
+### 🎯 What I Worked On
+
+After tuning and optimizing the LightGBM model, I focused on understanding *why* the model makes certain churn predictions.
+
+Instead of treating the model as a black box, I used SHAP (SHapley Additive exPlanations) to interpret both global feature importance and individual customer predictions.
+
+This step makes the model more transparent and business-friendly.
+
+---
+
+### ✅ Global Feature Interpretation
+
+Using SHAP summary and bar plots, I identified the most influential features driving churn predictions.
+
+Key observations:
+
+- Customers with month-to-month contracts show higher churn risk.
+- Lower tenure significantly increases churn probability.
+- Higher monthly charges are associated with increased churn likelihood.
+- Lack of online security and tech support increases churn risk.
+
+This confirms that contract type, service support, and pricing structure strongly impact customer retention.
+
+---
+
+### ✅ Individual Prediction Explanation
+
+I also generated SHAP waterfall plots to explain individual customer predictions.
+
+This helped visualize:
+
+- Which features pushed the prediction toward churn.
+- Which features reduced churn probability.
+- How different variables interact to influence final output.
+
+This allows the model to provide not just predictions, but explanations.
+
+---
+
+### 📊 Why This Matters
+
+Model performance is important, but explainability builds trust.
+
+With SHAP analysis, the project now:
+
+- Identifies key churn drivers
+- Supports data-driven retention strategies
+- Provides interpretable and actionable insights
+- Moves beyond prediction into decision support
+
+---
+
+### 🚀 Project Progress So Far
+
+By Day 5, the project now includes:
+
+- Baseline Logistic Regression model
+- Tuned LightGBM model
+- Threshold optimization
+- Model comparison using ROC-AUC
+- Business-focused recall improvement
+- SHAP-based explainability analysis
+
+This transforms the project from a simple classification task into a strategic churn prediction system.
+
+---
+
 ###  Business Perspective
 
 In churn prediction:
