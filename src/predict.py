@@ -1,8 +1,12 @@
 import joblib
 import pandas as pd
 
-model = joblib.load("model/lightgbm_churn_model.pkl")
-columns = joblib.load("model/feature_columns.pkl")
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+model = joblib.load(os.path.join(BASE_DIR, "model", "lightgbm_churn_model.pkl"))
+columns = joblib.load(os.path.join(BASE_DIR, "model", "feature_columns.pkl"))
 
 THRESHOLD = 0.4
 
