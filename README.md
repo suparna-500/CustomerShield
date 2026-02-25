@@ -194,9 +194,9 @@ This makes it more suitable when the primary goal is minimizing revenue loss by 
 
 ---
 
-## 🚀 Day 5 — Model Explainability with SHAP
+##  Day 5 — Model Explainability with SHAP
 
-### 🎯 What I Worked On
+###  What I Worked On
 
 After tuning and optimizing the LightGBM model, I focused on understanding *why* the model makes certain churn predictions.
 
@@ -206,7 +206,7 @@ This step makes the model more transparent and business-friendly.
 
 ---
 
-### ✅ Global Feature Interpretation
+###  Global Feature Interpretation
 
 Using SHAP summary and bar plots, I identified the most influential features driving churn predictions.
 
@@ -221,7 +221,7 @@ This confirms that contract type, service support, and pricing structure strongl
 
 ---
 
-### ✅ Individual Prediction Explanation
+###  Individual Prediction Explanation
 
 I also generated SHAP waterfall plots to explain individual customer predictions.
 
@@ -235,7 +235,7 @@ This allows the model to provide not just predictions, but explanations.
 
 ---
 
-### 📊 Why This Matters
+###  Why This Matters
 
 Model performance is important, but explainability builds trust.
 
@@ -248,7 +248,7 @@ With SHAP analysis, the project now:
 
 ---
 
-### 🚀 Project Progress So Far
+###  Project Progress So Far
 
 By Day 5, the project now includes:
 
@@ -274,9 +274,9 @@ Model selection is therefore guided not only by accuracy, but by business impact
 
 ---
 
-## 🚀 Day 6 — Deployment & Dashboard
+##  Day 6 — Deployment & Dashboard
 
-### 🎯 Focus
+###  Focus
 
 Today I moved the project from experimentation to production readiness.
 
@@ -284,13 +284,13 @@ Instead of just training models in notebooks, I packaged the final solution so i
 
 ---
 
-### ✅ Final Model
+###  Final Model
 
 The tuned LightGBM model was selected as the final production model due to its strong churn recall and flexibility through threshold tuning.
 
 ---
 
-### 💾 Model Packaging
+###  Model Packaging
 
 - Saved trained model using `joblib`
 - Saved preprocessing artifacts (feature columns and scaler if used)
@@ -300,7 +300,7 @@ This ensures consistent and reproducible predictions outside the notebook.
 
 ---
 
-### 🌐 Streamlit Dashboard
+###  Streamlit Dashboard
 
 Built an interactive Streamlit app where users can:
 
@@ -313,7 +313,7 @@ The dashboard connects directly to the production prediction pipeline.
 
 ---
 
-### 🏆 Outcome
+###  Outcome
 
 By Day 6, the project now includes:
 
