@@ -274,3 +274,52 @@ Model selection is therefore guided not only by accuracy, but by business impact
 
 ---
 
+## 🚀 Day 6 — Deployment & Dashboard
+
+### 🎯 Focus
+
+Today I moved the project from experimentation to production readiness.
+
+Instead of just training models in notebooks, I packaged the final solution so it can be reused and deployed.
+
+---
+
+### ✅ Final Model
+
+The tuned LightGBM model was selected as the final production model due to its strong churn recall and flexibility through threshold tuning.
+
+---
+
+### 💾 Model Packaging
+
+- Saved trained model using `joblib`
+- Saved preprocessing artifacts (feature columns and scaler if used)
+- Created a reusable prediction function inside `src/predict.py`
+
+This ensures consistent and reproducible predictions outside the notebook.
+
+---
+
+### 🌐 Streamlit Dashboard
+
+Built an interactive Streamlit app where users can:
+
+- Enter customer details  
+- Generate churn prediction  
+- View churn probability  
+- See risk classification  
+
+The dashboard connects directly to the production prediction pipeline.
+
+---
+
+### 🏆 Outcome
+
+By Day 6, the project now includes:
+
+- Final optimized model  
+- Modular prediction pipeline  
+- Interactive web dashboard  
+- Clean production-ready structure  
+
+The project has evolved from a notebook-based model into a usable churn prediction product.
